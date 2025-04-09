@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتيجة التصميم</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #4e54c8;
+        }
+        .poet {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .poem-image {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .actions {
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #4e54c8;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #3a41b5;
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        {% if poet %}<p class="poet">لـ {{ poet }}</p>{% endif %}
+        
+        <div class="poem-preview">
+            <img src="/static/{{ img_path }}" alt="تصميم القصيدة" class="poem-image">
+        </div>
+        
+        <div class="actions">
+            <a href="/download/{{ img_path.split('/')[-1] }}" class="btn">تنزيل التصميم</a>
+            <a href="/create" class="btn btn-secondary">إنشاء تصميم جديد</a>
+        </div>
+    </div>
+</body>
+</html>

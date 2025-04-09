@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+h1 {
+    color: #4e54c8;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 200px;
+}
+
+.design-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.design-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+button, .download-btn, .back-btn {
+    display: inline-block;
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+button:hover, .download-btn:hover {
+    background: #3a41b5;
+}
+
+.poem-result {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.poem-result img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+    background: #6c757d;
+    margin-left: 1rem;
+}
+
+.back-btn:hover {
+    background: #5a6268;
+}
+
+.poet {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* أضف هذا لملف style.css */
+.poem-type-preview {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.decoration-preview {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+/* تأثيرات عند الاختيار */
+.design-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* زر التحليل */
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
